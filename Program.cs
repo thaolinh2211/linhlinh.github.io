@@ -4,30 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SinhVien
+namespace Nhanvien
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Sinhvien sv = new Sinhvien();
-            Sinhvien sv1 = new Sinhvien();
-            Sinhvien sv2 = new Sinhvien();
+            Nhanvien nv = new Nhanvien();
+            Nhanvien nv1 = new Nhanvien();
+            Nhanvien nv2 = new Nhanvien();
 
-            Console.WriteLine("Nhap thong tin sinh vien");
-            Sinhvien DTB = new Sinhvien();
-            DTB = Sinhvien.DiemTB();
-            DTB.XuatTT();
-            
+            Console.WriteLine("Nhap thong tin nhan vien 1");
+            nv1.Nhapnhanvien();
+            Console.Write("Tong tien cua nhan vien la:{0}", Nhanvien.Tinhluong(nv));
+            nv1.Innhanvien();
 
+            Console.WriteLine("Nhap thong tin nhan vien 2");
+            nv2.Nhapnhanvien();
+            Console.Write("Tong tien cua nhan vien la:{0}", Nhanvien.Tinhluong(nv));
+            nv2.Innhanvien();
 
-            Console.WriteLine("Nhap thong tin sinh vien thu hai");
-            sv2.NhapTT();
-
-            Console.WriteLine("Nhap ho ten:");
-
-
-
+            Console.ReadLine();
 
         }
     }
