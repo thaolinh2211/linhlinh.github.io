@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Quanlythuexe
 {
-    internal class Program
+    abstract public class Xe
     {
-        static void Main(string[] args)
-        {
-        }
+        abstract public void Nhap();
+        abstract public void Hien();
+        abstract public void TinhTien();
     }
 }
